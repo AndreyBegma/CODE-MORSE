@@ -3,6 +3,7 @@
 int main()
 {
   char a[99];
+  a[98]='\0';
   scanf("%s",a);
   int kol = my_strlen(a);
   int *d = (int *)malloc(sizeof(int) * kol);
