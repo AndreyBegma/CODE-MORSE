@@ -18,6 +18,7 @@ void check_morse(const char *str, int kol)
     if (str[i] == '-' && str[i+1] == '.' && str[i+2] == '-' && str[i+3] == '-' && i+3<=kol) {printf("%c",'y');i=i+4;}
     if (str[i] == '-' && str[i+1] == '-' && str[i+2] == '.' && str[i+3] == '.' && i+3<=kol) {printf("%c",'z');i=i+4;}
     if (str[i] == '-' && str[i+1] == '.' && str[i+2] == '.' && i+2<=kol) {printf("%c",'d');i=i+3;}
+    if (str[i] == '-' && str[i+1] == '-' && str[i+2] == '.' && i+2<=kol) {printf("%c",'g');i=i+3;}
     if (str[i] == '-' && str[i+1] == '.' && str[i+2] == '-' && i+2<=kol) {printf("%c",'k');i=i+3;}
     if (str[i] == '-' && str[i+1] == '-' && str[i+2] == '-' && i+2<=kol) {printf("%c",'o');i=i+3;}
     if (str[i] == '.' && str[i+1] == '-' && str[i+2] == '.' && i+2<=kol) {printf("%c",'r');i=i+3;}
