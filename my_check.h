@@ -1,6 +1,5 @@
 void check_morse(const char *str, int kol)
 {
-  printf("%d\n",kol);
   for (int i=0;i<=kol;i++)
   {
     if (str[i] == 32 && str[i+1] == 32 && str[i+2] == 32 && str[i+3] == 32 && str[i+4] == 32 && str[i+5] == 32){printf("%c",32);i=i+6;}
