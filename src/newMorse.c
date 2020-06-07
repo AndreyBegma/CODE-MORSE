@@ -1,5 +1,5 @@
-#include "my_lib.h"
-#include "my_function.h"
+#include "header.h"
+
 int main(int argc, char *argv[])
 {
   int strlength;
