@@ -24,7 +24,7 @@ all: install
 install:
 	@cp $(SRC) .
 	@cp $(INC) .
-	@clang $(CFLAG) $(SRCS) -o $(NAME) -I $(HDR)
+	@clang $(CFLAG) $(SRCS) -I $(HDR)
 
 uninstall:
 	@rm -rf $(SRCS)
