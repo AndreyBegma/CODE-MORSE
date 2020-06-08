@@ -1,3 +1,4 @@
+#include "header.h"
 void check_morse(const char *str, int kol)
 {
   for (int i=0;i<=kol;i++)

@@ -16,5 +16,6 @@ int main(int argc, char *argv[])
       //printf("%s","Strlength=");
       check_morse(str,strlength);
       //printf("%s\n",str);
+      printf("\n");
   }
 }

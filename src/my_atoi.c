@@ -1,3 +1,4 @@
+#include "header.h"
 int my_atoi(char b[99],int kol)
 {
   int d=0;

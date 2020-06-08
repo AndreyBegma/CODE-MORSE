@@ -1,26 +1,26 @@
 NAME = morse
 
-INC = inc/header.h
+INC = inc/header.h \
 
-HDR = header.Iinh \
+HDR = header.h \
 
 
-SRC = src/check_error.c \
-			src/newMorse.c \
+SRC =			src/newMorse.c \
+			src/check_error.c \
 			src/my_strlen.c \
 			src/my_check.c \
 			src/my_atoi.c \
 
-SRCS = check_error.c \
-			 newMorse.c \
+SRCS = 			 newMorse.c \
+			 check_error.c \
 			 my_strlen.c \
 			 my_check.c \
-			 src/my_atoi.c \
+			 my_atoi.c \
 
 
 CFLAG = -std=c11 -Wall -Wextra -Wpedantic -Werror
 
-all: install clean
+all: install 
 install:
 	@cp $(SRC) .
 	@cp $(INC) .
@@ -34,5 +34,8 @@ uninstall:
 clean:
 	@rm -rf $(SRCS)
 	@rm -rf $(HDR)
+	@rm -rf $(NAME)
+
+
 
 reinstall: uninstall all
