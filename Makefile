@@ -5,17 +5,17 @@ INC = inc/header.h
 HDR = header.Iinh \
 
 
-SRC = src/check_error.c \
-			src/newMorse.c \
+SRC =			src/newMorse.c \
+			src/check_error.c \
 			src/my_strlen.c \
 			src/my_check.c \
 			src/my_atoi.c \
 
-SRCS = check_error.c \
-			 newMorse.c \
+SRCS = 			 newMorse.c \
+			 check_error.c \
 			 my_strlen.c \
 			 my_check.c \
-			 src/my_atoi.c \
+			 my_atoi.c \
 
 
 CFLAG = -std=c11 -Wall -Wextra -Wpedantic -Werror
@@ -24,7 +24,7 @@ all: install clean
 install:
 	@cp $(SRC) .
 	@cp $(INC) .
-	@clang $(CFLAG) $(SRCS) -o $(NAME) -I $(HDR)
+	@clang $(CFLAG) $(SRCS) -I $(HDR)
 
 uninstall:
 	@rm -rf $(SRCS)
